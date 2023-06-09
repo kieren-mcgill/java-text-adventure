@@ -82,7 +82,7 @@ public class World {
         map.add(new Room("Nine", room9, 8, -100, -14, 10, shoppingList.getItems(List.of("nothing")), 7, 7));
         map.add(new Room("Ten", room10, -100, 11, 9, -100, shoppingList.getItems(List.of("nothing")), 7, 6));
         map.add(new Room("Eleven", room11, 10, -100, 12, -100, shoppingList.getItems(List.of("redkey")), 8, 6));
-        map.add(new Room("Twelve", room12, 9, -13, -100, 11, shoppingList.getItems(List.of("nothing")), 2, 7));
+        map.add(new Room("Twelve", room12, 9, -13, -100, 11, shoppingList.getItems(List.of("nothing")), 8, 7));
         map.add(new Room("Thirteen", room13, 12, -100, -100, -100, shoppingList.getItems(List.of("blackkey", "trowel")), 9, 7));
         map.add(new Room("Fourteen", room14, -100, -100, -100, -9, shoppingList.getItems(List.of("nothing")), 7, 8));
 

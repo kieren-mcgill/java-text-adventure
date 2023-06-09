@@ -1,9 +1,12 @@
 import java.util.*;
+import java.util.concurrent.TimeUnit;
+
 
 public class Game {
 
 
     public Game() {
+        Map.createMap1();
     }
 
     public List<String> getWordList(String input) {
@@ -52,7 +55,7 @@ public class Game {
     }
 
     static World world = new World();
-    public static int roomIndex = 12;
+    public static int roomIndex = 0;
     public static Room currentRoom = world.map.get(roomIndex);
 
     public void changeRoom(int oldRoomIndex, int newRoomIndex) {
@@ -216,7 +219,7 @@ public class Game {
 
 
 
-    public void give(int roomIndex, String noun) {
+    public void give(int roomIndex, String noun) throws InterruptedException {
         switch (roomIndex) {
             case 7:
                 endLevelOne(noun);
@@ -229,7 +232,7 @@ public class Game {
         }
     }
 
-    public void endLevelOne(String thing) {
+    public void endLevelOne(String thing) throws InterruptedException {
         if (thing.equals("crabs")) {
             String endLevelOne = "Chymidea complains bitterly that this is the worst case of crabs she has ever had but grins with glee at the rusty cog. She steps to one side and the lift doors open. However as you step forward you feel a sharp blow \n to the back of your head. You fall to the floor and fade to black.";
 
